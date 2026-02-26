@@ -85,6 +85,7 @@ hold off;
 
 %% Figure 3. Respiration
 sampleTime = 300;
+thresh = 2.5;
 data = pressureSensor(a, sampleTime, thresh, livePlot, pauseTime);
 figure;
 plot(data.time,data.voltage);
